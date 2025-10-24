@@ -40,7 +40,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.markdown('<div class="big-title">RESISTIVITY DATA VIEWER</div>', unsafe_allow_html=True)
+st.markdown('<div class="big-title">RESISTIVITY DATA RECORDER - VIEWER</div>', unsafe_allow_html=True)
 
 # Initialize session state
 if "lines" not in st.session_state:
@@ -639,6 +639,7 @@ if st.button("Export"):
             file_name=f"{client}_{loc_name}_{date}.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",icon="📥"
         )
+
 
 
 
