@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import xlsxwriter
 from streamlit_searchbox import st_searchbox
 
-st.set_page_config(page_title="FIELD RESISTIVITY DATA RECORDER", layout="wide")
+st.set_page_config(page_title="RESLIVE", layout="wide")
 st.image("https://bebpl.com/wp-content/uploads/2023/07/BLUE-ENERGY-lFINAL-LOGO.png", width=200)
 
 # --- CSS for gradient background and nicer layout ---
@@ -639,6 +639,7 @@ if st.button("Export"):
             file_name=f"{client}_{loc_name}_{date}.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",icon="📥"
         )
+
 
 
 
